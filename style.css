@@ -65,3 +65,36 @@ ul li {
     margin-top: 20px;
     color: #777;
 }
+.capa {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.instagram {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d63384;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.instagram:hover {
+    color: #e75480;
+}
+
+.container {
+    animation: aparecer 1s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
