@@ -32,3 +32,36 @@ button {
 button:hover {
     background-color: #e75480;
 }
+.container {
+    background: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #d63384;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.slogan {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-top: 20px;
+    color: #777;
+}
