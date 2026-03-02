@@ -29,18 +29,21 @@
 
     <h2>Agendamento</h2>
 
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="tel" placeholder="Seu telefone" required>
-      <select required>
-        <option value="">Escolha o serviço</option>
-        <option>Corte feminino</option>
-        <option>Escova</option>
-        <option>Manicure</option>
-        <option>Progressiva</option>
-      </select>
-      <input type="date" required>
-      <button type="submit">Agendar</button>
+      <form onsubmit="enviarWhats(event)">
+  <input type="text" id="nome" placeholder="Seu nome" required>
+  <input type="tel" id="telefone" placeholder="Seu telefone" required>
+  
+  <select id="servico" required>
+    <option value="">Escolha o serviço</option>
+    <option>Corte feminino</option>
+    <option>Escova</option>
+    <option>Manicure</option>
+    <option>Progressiva</option>
+  </select>
+  
+  <input type="date" id="data" required>
+  
+  <button type="submit">Agendar</button>
     </form>
 
     <br>
