@@ -53,6 +53,26 @@
     </a>
 
   </div>
+<script>
+function enviarWhats(event) {
+  event.preventDefault();
 
+  var nome = document.getElementById("nome").value;
+  var telefone = document.getElementById("telefone").value;
+  var servico = document.getElementById("servico").value;
+  var data = document.getElementById("data").value;
+
+  var mensagem = "Olá, meu nome é " + nome +
+                 ". Quero agendar " + servico +
+                 " para o dia " + data +
+                 ". Meu telefone é " + telefone;
+
+  var numero = "5515991863247"; // coloque seu número aqui
+
+  var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+
+  window.open(url, "_blank");
+}
+</script>
 </body>
 </html>
